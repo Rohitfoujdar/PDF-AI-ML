@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Submit a Form</h1>
+    <form action="{{url_for('form_page')}}" method="post">
+        <input type="text" name="maths" placeholder="maths" required="required">
+        <input type="text" name="science" placeholder="science" required="required">
+        <input type="text" name="history" placeholder="history" required="required">
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Calculate Button</button>
+   </form>
+
+   <br>
+     The average marks is {{score}}
+   </br>
+</body>
+</html>
